@@ -1,0 +1,22 @@
+.nav-div img {
+  width: 15%;
+  margin-right: 70%;
+}
+.nav-div .navbar {
+  text-align: center;
+}
+.nav-div .navbar .nav-links {
+  font-size: 1.6rem;
+  list-style-type: none;
+  display: flex;
+}
+.nav-div .navbar .nav-links li {
+  margin-right: auto;
+}
+.nav-div .navbar a {
+  text-decoration: none;
+  color: black;
+}
+.nav-div .navbar a:hover {
+  color: white;
+}
