@@ -15,6 +15,7 @@ body {
 @nav-footer-color: #141c25;
 @nav-footer-padding: 20px 0;
 @md-laptop: ~"(max-width: 900px)";
+@tablet: ~"(max-width: 700px)";
 @mobile: ~"(max-width: 700px)";
 
 // Mixin 
@@ -32,7 +33,7 @@ body {
     background-color: @nav-footer-color;
     padding: @nav-footer-padding;
 
-    @media @mobile {
+    @media @md-laptop {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -42,7 +43,7 @@ body {
         width: 90px;
         .overall-container(100px, 0px);
 
-        @media @mobile {
+        @media @md-laptop {
             .overall-container(0, 0)
         }
     }
@@ -50,7 +51,7 @@ body {
     nav {
         .overall-container(0px, 100px);
 
-        @media @mobile {
+        @media @md-laptop {
             .overall-container(0, 0);
             margin-top: 30px;
         }
@@ -61,14 +62,19 @@ body {
         text-decoration: none;
         margin-left: 30px;
 
-        @media @mobile {
+        @media @md-laptop {
             margin-left: 30px;
             margin-right: 30px;
+        }
+
+        @media @mobile {
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 }
 
-// Main
+// Team Cards 
 .container {
     display: flex;
     flex-direction: column;
@@ -100,7 +106,7 @@ body {
             width: 45%;
         }
 
-        @media @mobile {
+        @media @tablet {
             width: 100%;
         }
 
