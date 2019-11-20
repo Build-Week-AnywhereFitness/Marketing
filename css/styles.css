@@ -68,6 +68,9 @@ body {
     margin-right: 10px;
   }
 }
+.navbar a:hover {
+  color: #f29148;
+}
 .container {
   display: flex;
   flex-direction: column;
