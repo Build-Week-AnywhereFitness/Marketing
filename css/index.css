@@ -58,6 +58,7 @@ body .middle-picture {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 .middle-content .mid-right {
   margin-right: 2%;
@@ -65,4 +66,24 @@ body .middle-picture {
 .middle-content .mid-left {
   align-items: center;
   margin-left: 20%;
+}
+.bottom-picture {
+  height: 5%;
+  width: 40%;
+}
+.bottom-content .main-bottom-text {
+  background-color: #f29148;
+  display: flex;
+  align-items: center;
+}
+.bottom-content .main-bottom-text img {
+  height: 50%;
+  width: 60%;
+  margin-left: 40%;
+}
+.bottom-content .main-bottom-text p,
+.bottom-content .main-bottom-text h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
