@@ -44,7 +44,10 @@ input, textarea{
 	border: solid 3px black;	
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+    box-sizing:border-box;
+    @media @phone{
+      width: 450px;       
+    }
 	
 }
 input:focus, textarea:focus{
@@ -90,6 +93,7 @@ label{
 .left-contact{
     img{
         width: 20%;
+        
     }
 }
 
@@ -97,9 +101,15 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media @phone{
+     flex-direction: column;       
+    }
    
 
   .contact-img{
       width:40%;
+      @media @phone{
+     width: 50%;       
+    }
   }
 }
