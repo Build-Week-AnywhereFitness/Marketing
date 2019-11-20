@@ -2,6 +2,22 @@ body,
 html {
   margin: 0;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  line-height: 1.6;
+}
+h1 {
+  font-size: 2.5rem;
+}
 .nav-div img {
   width: 15%;
   margin-right: 70%;
@@ -31,15 +47,30 @@ html {
 .nav-div .navbar a:hover {
   color: #f29148;
 }
+.navbar2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141c25;
+  padding: 20px 0;
+}
+.navbar2 a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
 header {
   color: #fff;
 }
 header h1 {
   text-align: center;
   padding-top: 5%;
+  font-family: 'Open Sans', sans-serif;
 }
 header p {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 header button {
   margin-left: auto;
